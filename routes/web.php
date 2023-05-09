@@ -71,6 +71,7 @@ use Illuminate\Support\Facades\Route;
 //home (menu utama )
 Route::get('/', function () {
     return view('home', [
+        'tittle' => 'home',
         'name' => 'Naufal',
         'biodata' => ['Tono', 'Budi', 'jokowi', 'megachan'],
         'role' => 'Admin'
@@ -82,26 +83,33 @@ Route::get('/', function () {
 // get('/' (sesuai herf yg ada di navbar))
 Route::get('back', function () {
     return view('home', [ //('home' sesuai dengan nama file)
+        'tittle' => 'home',
         'name' => 'Naufal',
         'biodata' => ['Tono', 'Budi', 'jokowi', 'megachan'],
-        'role' => 'Pengunjung'
+        'role' => 'Staff'
     ]);
 });
 
 
 // porto
 Route::get('/porto', function () {
-    return view('porto');
+    return view('porto', [
+        'tittle' => 'porto'
+    ]);
 });
 
 // project
-Route::get('/project', function () {
-    return view('project');
+Route::get('/users', function () {
+    return view('users', [
+        'tittle' => 'users'
+    ]);
 });
 
 // reach
 Route::get('/reach', function () {
-    return view('reach');
+    return view('reach', [
+        'tittle' => 'reach'
+    ]);
 });
 
 // server MT
@@ -112,7 +120,9 @@ Route::view('/gudang', 'gudang', []);
 
 // about
 Route::get('/about', function () {
-    return view('/about');
+    return view('/about', [
+        'tittle' => 'about'
+    ]);
 });
 
 // cek versi laravel

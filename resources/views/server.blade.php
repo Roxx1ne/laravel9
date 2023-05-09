@@ -8,9 +8,9 @@
     <title>Laravel 9 | Server</title>
 </head>
 
-<body>
-    <h1> Status : <span Style="color: green">OK</span></h1>
-    <h1> Privacy : <span Style="color: green">Secured</span></h1>
+<body style="background-color: #66347F">
+    <h1> Status : <span Style="color: rgb(17, 231, 17)">OK</span></h1>
+    <h1> Privacy : <span Style="color: rgb(17, 231, 17)">Secured</span></h1>
 </body>
 
 </html>
